@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
     private float dashingPower = 24f;
     private float dashingTime = 0.2f;
     private float dashingCooldown = 1f;
-    [SerializeField] 
+    [SerializeField] private Trailrenderer tr;
 
     private Rigidbody2D rgbd;
     private SpriteRenderer rend;
