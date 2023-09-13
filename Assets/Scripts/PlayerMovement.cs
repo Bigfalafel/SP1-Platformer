@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask Ground;
 
-   
+
     private void Start()
     {
         tr.emitting = false;
@@ -43,13 +43,8 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
         }
 
-        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
-        }
-
         if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
-        {   
+        {
 
             StartCoroutine(Dash());
         }
@@ -61,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
 
         Flip();
 
-       
+
     }
     private void FixedUpdate()
     {
@@ -69,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
         {
             return;
         }
-       
+
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
 
     }
@@ -98,19 +93,19 @@ public class PlayerMovement : MonoBehaviour
         isDashing = true;
         float originalGravity = rb.gravityScale;
         rb.gravityScale = 0f;
-        rb.velocity = new Vector2(transform.localScale.x, Input.GetAxisRaw("Vertical")* 0.5f)* dashingPower;
+        rb.velocity = new Vector2(transform.localScale.x, Input.GetAxisRaw("Vertical")) * dashingPower;
         tr.emitting = true;
         yield return new WaitForSeconds(dashingTime);
         tr.emitting = false;
         rb.gravityScale = originalGravity;
         isDashing = false;
-        rb.velocity = new Vector2(transform.localScale.x, 0) ;
+        rb.velocity = new Vector2(transform.localScale.x, 0);
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
         isDashingCooldown = false;
 
     }
-   
+
 
 
 }
