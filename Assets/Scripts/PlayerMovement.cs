@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpForce = 8f;
     [SerializeField] private float jumpReleaseModifier = 2f;
     [SerializeField] private GameObject jumpParticles;
+    [SerializeField] private float fallAcceleration = -10f;
 
     private bool isJumping;
     
@@ -69,7 +70,7 @@ public class PlayerMovement : MonoBehaviour
         {
             canDash = true;
         }
-
+       
 
         Flip();
 
@@ -87,7 +88,10 @@ public class PlayerMovement : MonoBehaviour
         }
 
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
-
+        if (rb.velocity.y < 0 && rb.velocity.y > -100)
+        {
+            rb.AddForce(new Vector2(0, -fallAcceleration));
+        }
     }
     private void Flip()
     {
