@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1733880085120985416}
   - component: {fileID: 2154728428195869708}
   - component: {fileID: 3545122317846948464}
+  - component: {fileID: 768261422338614984}
   m_Layer: 6
   m_Name: Box
   m_TagString: Ground
@@ -109,10 +110,10 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Interpolate: 1
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!61 &3545122317846948464
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -158,3 +159,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &768261422338614984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8687190087087434144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b422558114c0fb24bb24821ffebf930d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 2154728428195869708}
+  fallAcceleration: 10

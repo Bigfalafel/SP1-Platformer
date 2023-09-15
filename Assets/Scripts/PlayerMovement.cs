@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpForce = 8f;
     [SerializeField] private float jumpReleaseModifier = 2f;
     [SerializeField] private GameObject jumpParticles;
-    [SerializeField] private float fallAcceleration = -10f;
+    [SerializeField] private float fallAcceleration = 10f;
 
     private bool isJumping;
     
