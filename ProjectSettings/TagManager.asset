@@ -10,6 +10,7 @@ TagManager:
   - Banana
   - Health
   - Wall
+  - BoxKiller
   layers:
   - Default
   - TransparentFX

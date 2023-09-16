@@ -21,12 +21,27 @@ public class Box : MonoBehaviour
         }
     }
     
-    private void OnCollisionStay2D(Collision2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
              rb.constraints = RigidbodyConstraints2D.FreezePositionX;
              
+        }
+    }
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            rb.constraints = RigidbodyConstraints2D.None;
+
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("BoxKiller"))
+        {
+            Destroy(gameObject);
         }
     }
 }   
