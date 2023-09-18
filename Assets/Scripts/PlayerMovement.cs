@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private float vertical;
     private float horizontal;
+
     [Header("Movement")]
     [SerializeField] private float speed = 8f;
     private bool isFacingRight = true;
@@ -49,8 +50,8 @@ public class PlayerMovement : MonoBehaviour
         vertical = Input.GetAxisRaw("Vertical");
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        var jumpInput = Input.GetButtonDown("Jump");
-        var jumpInputRelease = Input.GetButtonUp("Jump");
+        var jumpInput = Input.GetKeyDown(KeyCode.Space);
+        var jumpInputRelease = Input.GetKeyUp(KeyCode.Space);
 
         if (jumpInput && IsGrounded())
         {

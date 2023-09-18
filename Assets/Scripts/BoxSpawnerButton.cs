@@ -7,9 +7,14 @@ public class BoxSpawnerButton : MonoBehaviour
     [SerializeField] BoxSpawner boxSpawner;
 
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        boxSpawner.spawnBox = true;
+        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Player2")) 
+        {
+            
+            boxSpawner.spawnBox = true;
+        }
+        
     }
 
 
