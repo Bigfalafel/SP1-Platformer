@@ -41,7 +41,7 @@ public class Player2Movement : MonoBehaviour
         if (jumpInput && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            Instantiate(jumpParticles, transform.position, jumpParticles.transform.localRotation);
+           
         }
         if (jumpInputRelease && rb.velocity.y > 0)
         {
