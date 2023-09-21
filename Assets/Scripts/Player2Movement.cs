@@ -13,14 +13,13 @@ public class Player2Movement : MonoBehaviour
 
     [Header("Jump")]
     [SerializeField] private float jumpForce = 8f;
-    [SerializeField] private float jumpReleaseModifier = 2f;
     [SerializeField] private GameObject jumpParticles;
     [SerializeField] private float fallAcceleration = 10f;
 
-    private bool isJumping;
+    public bool isJumping;
 
     [Header("Physics")]
-    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] public Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask Ground;
 
@@ -36,17 +35,14 @@ public class Player2Movement : MonoBehaviour
         horizontal = Input.GetAxisRaw("Horizontal");
 
         var jumpInput = Input.GetKeyDown(KeyCode.Space);
-        var jumpInputRelease = Input.GetKeyUp(KeyCode.Space);
+       
 
         if (jumpInput && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
            
         }
-        if (jumpInputRelease && rb.velocity.y > 0)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y / jumpReleaseModifier);
-        }
+      
 
        
 
@@ -55,7 +51,7 @@ public class Player2Movement : MonoBehaviour
 
 
     }
-    private bool IsGrounded()
+    public bool IsGrounded()
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, Ground);
     }

@@ -172,4 +172,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2154728428195869708}
-  fallAcceleration: 10
+  fallAcceleration: 0

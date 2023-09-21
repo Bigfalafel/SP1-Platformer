@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4154085230471952785}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Target1
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 137270621069396167}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.67, z: 0}
+  m_LocalPosition: {x: 0, y: 9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2857463182942217365}
   - component: {fileID: 6050648222331689589}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: p1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,8 +124,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 96483199199006010}
-  m_Layer: 0
-  m_Name: ElevatorTargets
+  m_Layer: 6
+  m_Name: Targets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -158,7 +158,7 @@ GameObject:
   m_Component:
   - component: {fileID: 829670266944870849}
   - component: {fileID: 1645542894940412193}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: p3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -241,7 +241,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4284379118924115029}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Target2
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -272,9 +272,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 151555326183690106}
-  - component: {fileID: -1630385274303549038}
-  m_Layer: 0
-  m_Name: Elevator
+  m_Layer: 6
+  m_Name: NextLevel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -297,22 +296,6 @@ Transform:
   - {fileID: 2520978425149366411}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-1630385274303549038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4546084702862221095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664b4b863ec9bb44092b56a15231d82d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Target1: {fileID: 4154085230471952785}
-  Target2: {fileID: 4284379118924115029}
-  moveSpeed: 2
-  Move: 0
 --- !u!1 &7473265358816388965
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,11 +306,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2520978425149366411}
   - component: {fileID: 606090105584913754}
-  - component: {fileID: 553236514638161548}
-  - component: {fileID: 3714715184038191792}
-  m_Layer: 10
-  m_Name: ElevatorPlatform
-  m_TagString: Ground
+  - component: {fileID: 8584851378810382936}
+  - component: {fileID: 1952266532069630297}
+  m_Layer: 6
+  m_Name: NextLevelPlatform
+  m_TagString: NextLevel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -382,7 +365,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: -0.009399414, y: 0.3395273}
+  m_Offset: {x: -0.009399414, y: -0.0020890236}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -393,28 +376,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.9808655, y: 0.32094538}
+  m_Size: {x: 2.9808655, y: 1.004178}
   m_EdgeRadius: 0
---- !u!251 &553236514638161548
-PlatformEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7473265358816388965}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RotationalOffset: 0
-  m_UseOneWay: 1
-  m_UseOneWayGrouping: 0
-  m_SurfaceArc: 180
-  m_UseSideFriction: 0
-  m_UseSideBounce: 0
-  m_SideArc: 1
---- !u!114 &3714715184038191792
+--- !u!114 &8584851378810382936
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -423,13 +387,58 @@ MonoBehaviour:
   m_GameObject: {fileID: 7473265358816388965}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664b4b863ec9bb44092b56a15231d82d, type: 3}
+  m_Script: {fileID: 11500000, guid: a496c7c33b9495c40bff533b9e4b54bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Target1: {fileID: 4154085230471952785}
   Target2: {fileID: 4284379118924115029}
   moveSpeed: 2
   Move: 0
+--- !u!61 &1952266532069630297
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7473265358816388965}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.011074066, y: 1.0131791}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.970993, y: 3.0263581}
+  m_EdgeRadius: 0
 --- !u!1 &8405502243914167621
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,7 +449,7 @@ GameObject:
   m_Component:
   - component: {fileID: 582422694412296232}
   - component: {fileID: 1714883565043062949}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: p2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

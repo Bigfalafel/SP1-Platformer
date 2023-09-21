@@ -13,11 +13,10 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Jump")]
     [SerializeField] private float jumpForce = 8f;
-    [SerializeField] private float jumpReleaseModifier = 2f;
     [SerializeField] private GameObject jumpParticles;
     [SerializeField] private float fallAcceleration = 10f;
 
-    private bool isJumping;
+    public bool isJumping;
     
 
     [Header("Dash")]
@@ -31,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isDashingCooldown;
 
     [Header("Physics")]
-    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] public Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask Ground;
     
@@ -51,18 +50,13 @@ public class PlayerMovement : MonoBehaviour
         horizontal = Input.GetAxisRaw("Horizontal");
 
         var jumpInput = Input.GetKeyDown(KeyCode.Space);
-        var jumpInputRelease = Input.GetKeyUp(KeyCode.Space);
+       
 
         if (jumpInput && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             Instantiate(jumpParticles, transform.position, jumpParticles.transform.localRotation);
         }
-        if (jumpInputRelease && rb.velocity.y > 0)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y / jumpReleaseModifier);
-        }
-
         if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         {
             StartCoroutine(Dash());
@@ -77,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
 
 
     }
-    private bool IsGrounded()
+    public bool IsGrounded()
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, Ground);
     }

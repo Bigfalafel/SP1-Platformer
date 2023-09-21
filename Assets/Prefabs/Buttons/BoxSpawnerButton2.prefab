@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7024841670538789221}
   - component: {fileID: 7368897289776464245}
-  - component: {fileID: 8359553529252181736}
   - component: {fileID: 4236134483117771166}
   - component: {fileID: 2472075664310116587}
+  - component: {fileID: 503158090355570835}
   m_Layer: 6
   m_Name: BoxSpawnerButton2
   m_TagString: Ground
@@ -80,19 +80,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.34022057}
   m_EdgeRadius: 0
---- !u!114 &8359553529252181736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 746316977278366994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb531b4acbbdae546af1777fccc1c1e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boxSpawner: {fileID: 0}
 --- !u!212 &4236134483117771166
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -190,3 +177,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.3125}
   m_EdgeRadius: 0
+--- !u!114 &503158090355570835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746316977278366994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d96465ba6e979c4883497256622536e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxSpawner: {fileID: 0}

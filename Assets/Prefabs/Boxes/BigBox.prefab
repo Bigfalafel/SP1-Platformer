@@ -207,7 +207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 8184564681939814240}
-  fallAcceleration: 10
+  fallAcceleration: 0
 --- !u!1 &1577328803338974872
 GameObject:
   m_ObjectHideFlags: 0
