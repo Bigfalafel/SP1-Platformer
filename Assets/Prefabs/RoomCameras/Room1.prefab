@@ -167,8 +167,8 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 22, y: 8}
-      - {x: -25, y: 8}
-      - {x: -25, y: -4}
+      - {x: -45, y: 8}
+      - {x: -45, y: -4}
       - {x: 22, y: -4}
   m_UseDelaunayMesh: 0
 --- !u!114 &4433361031869957554
