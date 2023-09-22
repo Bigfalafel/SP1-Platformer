@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3365927749615909664}
   - component: {fileID: 8831372597983061097}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: "L\xE5dor_1"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,9 +96,9 @@ GameObject:
   - component: {fileID: 8184564681939814240}
   - component: {fileID: 6420595527907482242}
   - component: {fileID: 4466735760024340570}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BigBox
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -208,6 +208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 8184564681939814240}
   fallAcceleration: 0
+  BS: {fileID: 0}
 --- !u!1 &1577328803338974872
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,7 +219,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2175193625369913550}
   - component: {fileID: 6221719626548471661}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: "L\xE5dor_6"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302,7 +303,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7920276497663606621}
   - component: {fileID: 3695586014045099917}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: "L\xE5dor_5"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -386,7 +387,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5095379334589828433}
   - component: {fileID: 5452594855878622934}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: "L\xE5dor_2"
   m_TagString: Untagged
   m_Icon: {fileID: 0}

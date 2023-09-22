@@ -10,15 +10,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 746316977278366994, guid: 8c290387d24aa664496f2df8cc7e4882, type: 3}
       propertyPath: m_Name
-      value: ElevatorOrPlatformStarter
+      value: MoveDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472075664310116587, guid: 8c290387d24aa664496f2df8cc7e4882, type: 3}
+      propertyPath: m_Size.y
+      value: 0.23373759
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472075664310116587, guid: 8c290387d24aa664496f2df8cc7e4882, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.43943113
       objectReference: {fileID: 0}
     - target: {fileID: 7024841670538789221, guid: 8c290387d24aa664496f2df8cc7e4882, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.977
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7024841670538789221, guid: 8c290387d24aa664496f2df8cc7e4882, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.989
+      value: -1.9949181
       objectReference: {fileID: 0}
     - target: {fileID: 7024841670538789221, guid: 8c290387d24aa664496f2df8cc7e4882, type: 3}
       propertyPath: m_LocalPosition.z
@@ -52,6 +60,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7368897289776464245, guid: 8c290387d24aa664496f2df8cc7e4882, type: 3}
+      propertyPath: m_Size.y
+      value: 0.33445382
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368897289776464245, guid: 8c290387d24aa664496f2df8cc7e4882, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.15595233
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8359553529252181736, guid: 8c290387d24aa664496f2df8cc7e4882, type: 3}
     m_RemovedGameObjects: []
@@ -78,5 +94,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 122c5e006b237cf4ea3613b2fc62efb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Platform: {fileID: 0}
-  Elevator: {fileID: 0}
+  Door: {fileID: 0}

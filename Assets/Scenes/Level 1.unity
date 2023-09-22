@@ -55369,13 +55369,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3926692805379779338, guid: 5c4696872984e8c4d9f5c620f1b12180, type: 3}
+      propertyPath: m_Size.y
+      value: 0.7204235
+      objectReference: {fileID: 0}
+    - target: {fileID: 3926692805379779338, guid: 5c4696872984e8c4d9f5c620f1b12180, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.4305499
+      objectReference: {fileID: 0}
     - target: {fileID: 6592345051784987590, guid: 5c4696872984e8c4d9f5c620f1b12180, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.06
       objectReference: {fileID: 0}
     - target: {fileID: 6592345051784987590, guid: 5c4696872984e8c4d9f5c620f1b12180, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.42
+      value: -1.973
       objectReference: {fileID: 0}
     - target: {fileID: 6592345051784987590, guid: 5c4696872984e8c4d9f5c620f1b12180, type: 3}
       propertyPath: m_LocalPosition.z
@@ -55424,7 +55432,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1635838570326637813, guid: 28a60846fb7090f40822f8b02c7d6dce, type: 3}
       propertyPath: m_Name
-      value: ActivateMovingObject
+      value: OpenDoor
       objectReference: {fileID: 0}
     - target: {fileID: 4485603104432493758, guid: 28a60846fb7090f40822f8b02c7d6dce, type: 3}
       propertyPath: Door
@@ -55436,7 +55444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9049307881725560962, guid: 28a60846fb7090f40822f8b02c7d6dce, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.9949181
+      value: -1.975
       objectReference: {fileID: 0}
     - target: {fileID: 9049307881725560962, guid: 28a60846fb7090f40822f8b02c7d6dce, type: 3}
       propertyPath: m_LocalPosition.z
@@ -55650,7 +55658,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9123596121277758902, guid: 4b433da0b4ba3f64b945a6f4a92ec44a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.24999928
+      value: -0.94
       objectReference: {fileID: 0}
     - target: {fileID: 9123596121277758902, guid: 4b433da0b4ba3f64b945a6f4a92ec44a, type: 3}
       propertyPath: m_LocalPosition.z
