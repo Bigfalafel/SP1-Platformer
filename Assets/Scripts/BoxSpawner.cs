@@ -9,13 +9,26 @@ public class BoxSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject Box;
     [SerializeField] public bool spawnBox = false;
-   
+
+    private GameObject SpawnedBox;
 
     private void Update()
-    {   if (spawnBox == true)
+    {
+        if (spawnBox && SpawnedBox == null)
         {
-            Instantiate(Box, new Vector3(transform.localPosition.x, transform.localPosition.y, 0), Quaternion.identity);
+           
+            var SpawnedBox = Instantiate(Box, new Vector3(transform.localPosition.x, transform.localPosition.y - 1, 0), Quaternion.identity);
+            
             spawnBox = false;
+            return;
         }
+        else
+        {
+            Destroy(SpawnedBox);
+            
+        }
+        
     }
+
+
 }

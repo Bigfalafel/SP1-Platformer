@@ -6,12 +6,11 @@ public class Box : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private float fallAcceleration = 10f;
+    public BoxSpawner BS;
     void Start()
     {
         
     }
-
-    
     void FixedUpdate()
     {
         

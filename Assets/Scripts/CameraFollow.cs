@@ -10,10 +10,11 @@ public class CameraFollow : MonoBehaviour
     public Player2Movement Player2;
     public bool player1Active = true;
     private CinemachineVirtualCamera vcam;
-
+    public PlayerSwitch PS;
     private void Start()
     {
         vcam = GetComponent<CinemachineVirtualCamera>();
+        
     }
 
     private void Update()
@@ -22,7 +23,17 @@ public class CameraFollow : MonoBehaviour
         {
             SwitchPlayer();
         }
-        
+        if (PS.player1Active == false)
+        {
+            vcam.Follow = Player2.transform;
+
+        }
+        else
+        {
+            vcam.Follow = Player1.transform;
+
+        }
+
     }
 
     public void SwitchPlayer()

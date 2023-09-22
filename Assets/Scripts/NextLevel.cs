@@ -58,5 +58,23 @@ public class NextLevel : MonoBehaviour
             Ready--;
         }
     }
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player") && other.transform.position.y > transform.position.y || other.gameObject.CompareTag("Player2") && other.transform.position.y > transform.position.y)
+        {
+            other.transform.SetParent(transform);
+            Rigidbody2D playerRigidbody = other.gameObject.GetComponent<Rigidbody2D>();
+            playerRigidbody.interpolation = RigidbodyInterpolation2D.None;
+        }
+    }
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Player2"))
+        {
+            other.transform.SetParent(null);
+            Rigidbody2D playerRigidbody = other.gameObject.GetComponent<Rigidbody2D>();
+            playerRigidbody.interpolation = RigidbodyInterpolation2D.Interpolate;
+        }
+    }
 
 }
