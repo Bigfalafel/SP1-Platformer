@@ -6286,11 +6286,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6592345051784987590, guid: 5c4696872984e8c4d9f5c620f1b12180, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.15
+      value: 35.72
       objectReference: {fileID: 0}
     - target: {fileID: 6592345051784987590, guid: 5c4696872984e8c4d9f5c620f1b12180, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.74
+      value: 3.26
       objectReference: {fileID: 0}
     - target: {fileID: 6592345051784987590, guid: 5c4696872984e8c4d9f5c620f1b12180, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6561,7 +6561,7 @@ Transform:
   m_GameObject: {fileID: 1175515825}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -23.99, y: -1.82, z: -1.8561325}
+  m_LocalPosition: {x: 14.880001, y: 3.18, z: -1.8561325}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6617,6 +6617,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 96359052842422544, guid: cd060943154700c47b904ff284bb7f8a, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 151555326183690106, guid: cd060943154700c47b904ff284bb7f8a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -6924,11 +6928,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9123596121277758902, guid: 4b433da0b4ba3f64b945a6f4a92ec44a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4300041
+      value: 37.44
       objectReference: {fileID: 0}
     - target: {fileID: 9123596121277758902, guid: 4b433da0b4ba3f64b945a6f4a92ec44a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5699997
+      value: 4.4300003
       objectReference: {fileID: 0}
     - target: {fileID: 9123596121277758902, guid: 4b433da0b4ba3f64b945a6f4a92ec44a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7284,10 +7288,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: NextLevel
       objectReference: {fileID: 0}
-    - target: {fileID: 8584851378810382936, guid: cd060943154700c47b904ff284bb7f8a, type: 3}
-      propertyPath: CameraFollow
-      value: 
-      objectReference: {fileID: 2003645787}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
