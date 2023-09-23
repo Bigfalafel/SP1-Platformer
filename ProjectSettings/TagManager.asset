@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Banana
   - Health
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Player
   - EnemyBlock
   - PlayerBlock
-  - 
+  - Wall
   - 
   - 
   - 
