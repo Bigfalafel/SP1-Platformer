@@ -27316,7 +27316,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 339444243332900120, guid: 24350df57cf5d2e4281688cf3a4f145a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 33.95111
+      value: 33.944294
       objectReference: {fileID: 0}
     - target: {fileID: 339444243332900120, guid: 24350df57cf5d2e4281688cf3a4f145a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -27572,7 +27572,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &342414037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57702,6 +57702,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room2
       objectReference: {fileID: 0}
+    - target: {fileID: 6457538650499255937, guid: 0e8caf6f30e0fc54abf22d227040697e, type: 3}
+      propertyPath: Player1
+      value: 
+      objectReference: {fileID: 2048371873}
+    - target: {fileID: 6457538650499255937, guid: 0e8caf6f30e0fc54abf22d227040697e, type: 3}
+      propertyPath: Player2
+      value: 
+      objectReference: {fileID: 2110193131}
     - target: {fileID: 8705379998364522429, guid: 0e8caf6f30e0fc54abf22d227040697e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20.71

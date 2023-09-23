@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MenuController : MonoBehaviour
 {
     [SerializeField] private GameObject creditsPanel;
+    [SerializeField] private GameObject settings;
 
     public void StartGame()
     {
@@ -19,8 +20,13 @@ public class MenuController : MonoBehaviour
     {
         creditsPanel.SetActive(true);
     }
+    public void Settings()
+    {
+        settings.SetActive(true);
+    }
     public void Back()
     {
         creditsPanel.SetActive(false);
+        settings.SetActive(false);
     }
 }
