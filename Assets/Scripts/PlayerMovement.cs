@@ -1,43 +1,32 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
     private float vertical;
     private float horizontal;
-
-    [Header("Movement")]
+    //Basic Movement
     [SerializeField] private float speed = 8f;
+    [SerializeField] private float jumpingPower = 16f;
     private bool isFacingRight = true;
-
-    [Header("Jump")]
-    [SerializeField] private float jumpForce = 8f;
-    [SerializeField] private GameObject jumpParticles;
-    [SerializeField] private float fallAcceleration = 10f;
-
-    public bool isJumping;
-    
-
-    [Header("Dash")]
-    [SerializeField] public float dashingForce = 8f;
-    [SerializeField] public float dashingTime = 0.2f;
-    [SerializeField] public float dashingCooldown = 1f;
-    [SerializeField] private TrailRenderer dashTrailRenderer;
-
+    //Dash
     private bool canDash = true;
     private bool isDashing;
     private bool isDashingCooldown;
+    [SerializeField] public float dashingPower = 30f;
+    [SerializeField] public float dashingTime = 0.2f;
+    [SerializeField] public float dashingCooldown = 1f;
 
-    [Header("Physics")]
-    [SerializeField] public Rigidbody2D rb;
+
+    [SerializeField] private TrailRenderer tr;
+    [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask Ground;
-    
+
 
     private void Start()
     {
-        dashTrailRenderer.emitting = false;
+        tr.emitting = false;
     }
     private void Update()
     {
@@ -49,31 +38,25 @@ public class PlayerMovement : MonoBehaviour
         vertical = Input.GetAxisRaw("Vertical");
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        var jumpInput = Input.GetKeyDown(KeyCode.Space);
-       
-
-        if (jumpInput && IsGrounded())
+        if (Input.GetButtonDown("Jump") && IsGrounded())
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            Instantiate(jumpParticles, transform.position, jumpParticles.transform.localRotation);
+            rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
         }
+
         if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         {
+
             StartCoroutine(Dash());
         }
         if (IsGrounded() && !isDashingCooldown)
         {
             canDash = true;
         }
-       
+
 
         Flip();
 
 
-    }
-    public bool IsGrounded()
-    {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, Ground);
     }
     private void FixedUpdate()
     {
@@ -83,11 +66,14 @@ public class PlayerMovement : MonoBehaviour
         }
 
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
-        if (rb.velocity.y < 0 && rb.velocity.y > -100)
-        {
-            rb.AddForce(new Vector2(0, -fallAcceleration));
-        }
+
     }
+
+    private bool IsGrounded()
+    {
+        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, Ground);
+    }
+
     private void Flip()
     {
         if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
@@ -98,7 +84,6 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = localScale;
         }
     }
-
     private IEnumerator Dash()
     {
         canDash = false;
@@ -108,14 +93,15 @@ public class PlayerMovement : MonoBehaviour
         isDashing = true;
         float originalGravity = rb.gravityScale;
         rb.gravityScale = 0f;
-        rb.velocity = new Vector2(transform.localScale.x, Input.GetAxisRaw("Vertical")) * dashingForce;
-        dashTrailRenderer.emitting = true;
+        rb.velocity = new Vector2(transform.localScale.x, Input.GetAxisRaw("Vertical")) * dashingPower;
+        tr.emitting = true;
         yield return new WaitForSeconds(dashingTime);
-        dashTrailRenderer.emitting = false;
+        tr.emitting = false;
         rb.gravityScale = originalGravity;
         isDashing = false;
         rb.velocity = new Vector2(transform.localScale.x, 0);
         yield return new WaitForSeconds(dashingCooldown);
+        canDash = true;
         isDashingCooldown = false;
 
     }

@@ -1,52 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Cinemachine;
 
 public class CameraFollow : MonoBehaviour
 {
+    [SerializeField] private Transform target;
+    [SerializeField] private Vector3 offset = new Vector3(0, 0, -10f);
+    [SerializeField] private float smoothing = 1.0f;
     
-    public PlayerMovement Player1;
-    public Player2Movement Player2;
-    public bool player1Active = true;
-    private CinemachineVirtualCamera vcam;
-    public PlayerSwitch PS;
-    private void Start()
+    
+
+    
+    void LateUpdate()
     {
-        vcam = GetComponent<CinemachineVirtualCamera>();
-        
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            SwitchPlayer();
-        }
-        if (PS.player1Active == false)
-        {
-            vcam.Follow = Player2.transform;
-
-        }
-        else
-        {
-            vcam.Follow = Player1.transform;
-
-        }
-
-    }
-
-    public void SwitchPlayer()
-    {
-        if (player1Active)
-        {
-            vcam.Follow = Player2.transform;
-            player1Active = false;
-        }
-        else
-        {
-            vcam.Follow = Player1.transform;
-            player1Active = true;
-        }
+        Vector3 newPosition = Vector3.Lerp(transform.position, target.position + offset, smoothing * Time.deltaTime);
+        transform.position = newPosition;
     }
 }
