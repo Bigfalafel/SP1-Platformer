@@ -2,11 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuController : MonoBehaviour
 {
     [SerializeField] private GameObject creditsPanel;
     [SerializeField] private GameObject settings;
+   
+
+
+
 
     public void StartGame()
     {
@@ -26,7 +31,22 @@ public class MenuController : MonoBehaviour
     }
     public void Back()
     {
-        creditsPanel.SetActive(false);
-        settings.SetActive(false);
+       
+            creditsPanel.SetActive(false);
+       
+       
+            settings.SetActive(false);
+          
+        
     }
+    
+    public void MainMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(0);
+    }
+    
+    
+    
+
 }
