@@ -693,7 +693,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -644, y: -93}
+  m_AnchoredPosition: {x: -644, y: -110}
   m_SizeDelta: {x: 100, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &716278523
@@ -716,14 +716,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Assets:
+  m_text: 'Level Design:
 
+    Assets:
 
-    Sfx:
+    Code:
 
 
     Music:
 
+    Sfx:
 
     Font:'
   m_isRightToLeft: 0
@@ -764,7 +766,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 10
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -1146,7 +1148,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 412, y: -93}
+  m_AnchoredPosition: {x: 412, y: -110}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &819276369
@@ -1169,16 +1171,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '-
+  m_text: 'Ida
 
+    Nikita
 
-    Darkworld Audio
+    Robin
 
 
     alkakrab
 
+    Darkworld Audio
 
-    Font Monger'
+    Font
+    Monger'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f420cc39be2caa64281c177035f64102, type: 2}
   m_sharedMaterial: {fileID: 6911112244690819599, guid: f420cc39be2caa64281c177035f64102, type: 2}
@@ -1217,7 +1222,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 10
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
