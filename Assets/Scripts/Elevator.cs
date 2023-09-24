@@ -8,15 +8,14 @@ public class Elevator : MonoBehaviour
     [SerializeField] private Transform Target1, Target2;
     [SerializeField] private float moveSpeed = 2.0f;
     public bool Move = false;
-
     private Transform currentTarget;
 
     void Start()
     {
         currentTarget = Target1;
+
     }
 
-   
     void FixedUpdate()
     {   if (Move)
         {
@@ -30,7 +29,7 @@ public class Elevator : MonoBehaviour
                 currentTarget = Target1;
                 
             }
-
+            
             transform.position = Vector2.MoveTowards(transform.position, currentTarget.position, moveSpeed * Time.deltaTime);
         }
        

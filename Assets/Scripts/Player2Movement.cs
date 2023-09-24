@@ -10,6 +10,7 @@ public class Player2Movement : MonoBehaviour
     [Header("Movement")]
     [SerializeField] private float speed = 8f;
     private bool isFacingRight = true;
+    private AudioSource audioSource;
 
     [Header("Jump")]
     [SerializeField] private float jumpForce = 8f;
@@ -26,7 +27,8 @@ public class Player2Movement : MonoBehaviour
 
     private void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
+        audioSource.Play();
     }
     private void Update()
     {
@@ -60,6 +62,17 @@ public class Player2Movement : MonoBehaviour
        
 
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+
+        if (IsGrounded() && rb.velocity.x == 0)
+        {
+
+            audioSource.Pause();
+
+        }
+        else
+        {
+            audioSource.UnPause();
+        }
         if (rb.velocity.y < 0 && rb.velocity.y > -100)
         {
             rb.AddForce(new Vector2(0, -fallAcceleration));

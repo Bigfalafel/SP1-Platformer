@@ -9,18 +9,23 @@ public class NextLevel : MonoBehaviour
     public bool Move = false;
     private float Ready = 0f;
     private Transform currentTarget;
-
+    private AudioSource AudioSource;
 
     void Start()
     {
         currentTarget = Target1;
-
+        AudioSource = GetComponent<AudioSource>();
     }
     void FixedUpdate()
     {
         if(Ready >= 2)
         {
+            AudioSource.UnPause();
             Move = true;
+        }
+        if(Ready != 2)
+        {
+            AudioSource.Pause();
         }
 
         if (Move)
@@ -41,6 +46,10 @@ public class NextLevel : MonoBehaviour
 
 
             transform.position = Vector2.MoveTowards(transform.position, currentTarget.position, moveSpeed * Time.deltaTime);
+        }
+        if (!Move)
+        {
+            AudioSource.Pause();
         }
 
     }
