@@ -31488,13 +31488,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoxSpawnerButton (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4236134483117771166, guid: 8c290387d24aa664496f2df8cc7e4882, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2bfafa58bb7abce459f0335bfc8cde91, type: 3}
     - target: {fileID: 7024841670538789221, guid: 8c290387d24aa664496f2df8cc7e4882, type: 3}
       propertyPath: m_LocalPosition.x
       value: 39.525642
       objectReference: {fileID: 0}
     - target: {fileID: 7024841670538789221, guid: 8c290387d24aa664496f2df8cc7e4882, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 20.032856
+      value: 20.084
       objectReference: {fileID: 0}
     - target: {fileID: 7024841670538789221, guid: 8c290387d24aa664496f2df8cc7e4882, type: 3}
       propertyPath: m_LocalPosition.z
@@ -31606,6 +31610,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1001415805930465839, guid: 80d4eaa3fc8e64645a160aebaadc39e9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2a5fcdaaca6d1944bbc234084fca8ff2, type: 3}
     - target: {fileID: 1078728108475091326, guid: 80d4eaa3fc8e64645a160aebaadc39e9, type: 3}
       propertyPath: m_Name
       value: BoxSpawner (2)
@@ -31730,11 +31738,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 339444243332900120, guid: 24350df57cf5d2e4281688cf3a4f145a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 32.56811
+      value: 22.54
       objectReference: {fileID: 0}
     - target: {fileID: 339444243332900120, guid: 24350df57cf5d2e4281688cf3a4f145a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.30649
+      value: 30.28
       objectReference: {fileID: 0}
     - target: {fileID: 339444243332900120, guid: 24350df57cf5d2e4281688cf3a4f145a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -31774,7 +31782,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3890321152055733031, guid: 24350df57cf5d2e4281688cf3a4f145a, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6885936917194042672, guid: 24350df57cf5d2e4281688cf3a4f145a, type: 3}
       propertyPath: m_Name
@@ -31797,13 +31805,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoxSpawnerButton
       objectReference: {fileID: 0}
+    - target: {fileID: 4236134483117771166, guid: 8c290387d24aa664496f2df8cc7e4882, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2bfafa58bb7abce459f0335bfc8cde91, type: 3}
     - target: {fileID: 7024841670538789221, guid: 8c290387d24aa664496f2df8cc7e4882, type: 3}
       propertyPath: m_LocalPosition.x
       value: 34.48
       objectReference: {fileID: 0}
     - target: {fileID: 7024841670538789221, guid: 8c290387d24aa664496f2df8cc7e4882, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.002998352
+      value: 0.124
       objectReference: {fileID: 0}
     - target: {fileID: 7024841670538789221, guid: 8c290387d24aa664496f2df8cc7e4882, type: 3}
       propertyPath: m_LocalPosition.z
@@ -32404,13 +32416,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoxSpawnerButton2
       objectReference: {fileID: 0}
+    - target: {fileID: 4236134483117771166, guid: 535f5a0f2727eaf4aa9c8594cdcf9a55, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4cc8ecfbe7ee4e04c9fba9a3b5ef4a94, type: 3}
     - target: {fileID: 7024841670538789221, guid: 535f5a0f2727eaf4aa9c8594cdcf9a55, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.61
       objectReference: {fileID: 0}
     - target: {fileID: 7024841670538789221, guid: 535f5a0f2727eaf4aa9c8594cdcf9a55, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 25.193
+      value: 24.989
       objectReference: {fileID: 0}
     - target: {fileID: 7024841670538789221, guid: 535f5a0f2727eaf4aa9c8594cdcf9a55, type: 3}
       propertyPath: m_LocalPosition.z
@@ -33144,6 +33160,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1001415805930465839, guid: 80d4eaa3fc8e64645a160aebaadc39e9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2a5fcdaaca6d1944bbc234084fca8ff2, type: 3}
     - target: {fileID: 1078728108475091326, guid: 80d4eaa3fc8e64645a160aebaadc39e9, type: 3}
       propertyPath: m_Name
       value: BoxSpawner
@@ -33568,6 +33588,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OpenDoor
       objectReference: {fileID: 0}
+    - target: {fileID: 2747508082345115769, guid: 28a60846fb7090f40822f8b02c7d6dce, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2bfafa58bb7abce459f0335bfc8cde91, type: 3}
     - target: {fileID: 4485603104432493758, guid: 28a60846fb7090f40822f8b02c7d6dce, type: 3}
       propertyPath: Door
       value: 
@@ -33578,7 +33602,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9049307881725560962, guid: 28a60846fb7090f40822f8b02c7d6dce, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.9749985
+      value: -1.947
       objectReference: {fileID: 0}
     - target: {fileID: 9049307881725560962, guid: 28a60846fb7090f40822f8b02c7d6dce, type: 3}
       propertyPath: m_LocalPosition.z
@@ -34009,6 +34033,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MovePlatform
       objectReference: {fileID: 0}
+    - target: {fileID: 2747508082345115769, guid: c3405f5be773ed34fbfc0778ae90cd63, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4cc8ecfbe7ee4e04c9fba9a3b5ef4a94, type: 3}
     - target: {fileID: 4425791909206495224, guid: c3405f5be773ed34fbfc0778ae90cd63, type: 3}
       propertyPath: Platform
       value: 
@@ -34019,7 +34047,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9049307881725560962, guid: c3405f5be773ed34fbfc0778ae90cd63, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 24.175
+      value: 23.914
       objectReference: {fileID: 0}
     - target: {fileID: 9049307881725560962, guid: c3405f5be773ed34fbfc0778ae90cd63, type: 3}
       propertyPath: m_LocalPosition.z
@@ -34177,6 +34205,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1001415805930465839, guid: 82097d0f5572f824e867056501245563, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 665e77d6a0ab1844eb70e878c39824f9, type: 3}
     - target: {fileID: 1078728108475091326, guid: 82097d0f5572f824e867056501245563, type: 3}
       propertyPath: m_Name
       value: BoxSpawner2
@@ -34449,6 +34481,10 @@ PrefabInstance:
       propertyPath: Elevator
       value: 
       objectReference: {fileID: 1972681627}
+    - target: {fileID: 2747508082345115769, guid: 348ebab981d5f924993f18a0384519e6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2bfafa58bb7abce459f0335bfc8cde91, type: 3}
     - target: {fileID: 9049307881725560962, guid: 348ebab981d5f924993f18a0384519e6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 39.048454
@@ -34631,6 +34667,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 447059928043362275, guid: 82097d0f5572f824e867056501245563, type: 3}
+      propertyPath: Box
+      value: 
+      objectReference: {fileID: 8687190087087434144, guid: d0510bed2876e0b419418009a8b5d94f, type: 3}
+    - target: {fileID: 1001415805930465839, guid: 82097d0f5572f824e867056501245563, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 665e77d6a0ab1844eb70e878c39824f9, type: 3}
     - target: {fileID: 1078728108475091326, guid: 82097d0f5572f824e867056501245563, type: 3}
       propertyPath: m_Name
       value: BoxSpawner2 (1)
@@ -35123,6 +35167,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1001415805930465839, guid: 80d4eaa3fc8e64645a160aebaadc39e9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2a5fcdaaca6d1944bbc234084fca8ff2, type: 3}
     - target: {fileID: 1078728108475091326, guid: 80d4eaa3fc8e64645a160aebaadc39e9, type: 3}
       propertyPath: m_Name
       value: BoxSpawner (1)
@@ -35419,13 +35467,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoxSpawnerButton2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2472075664310116587, guid: 535f5a0f2727eaf4aa9c8594cdcf9a55, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4236134483117771166, guid: 535f5a0f2727eaf4aa9c8594cdcf9a55, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4cc8ecfbe7ee4e04c9fba9a3b5ef4a94, type: 3}
     - target: {fileID: 7024841670538789221, guid: 535f5a0f2727eaf4aa9c8594cdcf9a55, type: 3}
       propertyPath: m_LocalPosition.x
       value: 26.505754
       objectReference: {fileID: 0}
     - target: {fileID: 7024841670538789221, guid: 535f5a0f2727eaf4aa9c8594cdcf9a55, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 20.156073
+      value: 19.952
       objectReference: {fileID: 0}
     - target: {fileID: 7024841670538789221, guid: 535f5a0f2727eaf4aa9c8594cdcf9a55, type: 3}
       propertyPath: m_LocalPosition.z
@@ -35457,6 +35513,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7024841670538789221, guid: 535f5a0f2727eaf4aa9c8594cdcf9a55, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368897289776464245, guid: 535f5a0f2727eaf4aa9c8594cdcf9a55, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -36360,13 +36420,17 @@ PrefabInstance:
       propertyPath: Elevator
       value: 
       objectReference: {fileID: 1251998106}
+    - target: {fileID: 2747508082345115769, guid: 348ebab981d5f924993f18a0384519e6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2bfafa58bb7abce459f0335bfc8cde91, type: 3}
     - target: {fileID: 9049307881725560962, guid: 348ebab981d5f924993f18a0384519e6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 30.524
       objectReference: {fileID: 0}
     - target: {fileID: 9049307881725560962, guid: 348ebab981d5f924993f18a0384519e6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 20.008
+      value: 20.101
       objectReference: {fileID: 0}
     - target: {fileID: 9049307881725560962, guid: 348ebab981d5f924993f18a0384519e6, type: 3}
       propertyPath: m_LocalPosition.z
