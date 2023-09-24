@@ -95,10 +95,10 @@ GameObject:
   - component: {fileID: 5399797802559129571}
   - component: {fileID: 8184564681939814240}
   - component: {fileID: 6420595527907482242}
-  - component: {fileID: 4466735760024340570}
+  - component: {fileID: 348788155975745678}
   m_Layer: 6
   m_Name: BigBox
-  m_TagString: Ground
+  m_TagString: Box
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,8 +113,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.976847, y: 4.0351715, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.97, y: 0.97, z: 0.97}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3365927749615909664}
   - {fileID: 5095379334589828433}
@@ -194,7 +194,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.0237541, y: 2.0237653}
   m_EdgeRadius: 0
---- !u!114 &4466735760024340570
+--- !u!114 &348788155975745678
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -203,7 +203,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 599038728227709092}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b422558114c0fb24bb24821ffebf930d, type: 3}
+  m_Script: {fileID: 11500000, guid: 94f3fb14c4628e04db16bdaa959e7e26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 8184564681939814240}

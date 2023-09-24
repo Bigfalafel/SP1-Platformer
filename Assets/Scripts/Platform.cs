@@ -34,7 +34,7 @@ public class Platform : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Player") && other.transform.position.y > transform.position.y || other.gameObject.CompareTag("Player2") && other.transform.position.y > transform.position.y)
+        if (other.gameObject.CompareTag("Player") && other.transform.position.y > transform.position.y || other.gameObject.CompareTag("Player2") && other.transform.position.y > transform.position.y || other.gameObject.CompareTag("Box") && other.transform.position.y > transform.position.y)
         {
             
             other.transform.SetParent(transform);
@@ -44,7 +44,7 @@ public class Platform : MonoBehaviour
     }
     private void OnCollisionExit2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Player2"))
+        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Player2")|| other.gameObject.CompareTag("Box"))
         {
             other.transform.SetParent(null);
             Rigidbody2D playerRigidbody = other.gameObject.GetComponent<Rigidbody2D>();

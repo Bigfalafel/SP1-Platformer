@@ -63,13 +63,17 @@ public class Player2Movement : MonoBehaviour
 
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
 
-        if (IsGrounded() && rb.velocity.x == 0)
+        if (rb.velocity.x == 0)
         {
 
             audioSource.Pause();
 
         }
-        else
+        if (!IsGrounded())
+        {
+            audioSource.Pause();
+        }
+        if (IsGrounded() && rb.velocity.x != 0)
         {
             audioSource.UnPause();
         }

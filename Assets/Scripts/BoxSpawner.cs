@@ -10,23 +10,19 @@ public class BoxSpawner : MonoBehaviour
     [SerializeField] private GameObject Box;
     [SerializeField] public bool spawnBox = false;
 
-    private GameObject SpawnedBox;
+    public int SpawnedBox = 0;
 
     private void Update()
     {
-        if (spawnBox && SpawnedBox == null)
+        if (spawnBox && SpawnedBox != 1)
         {
-           
-            var SpawnedBox = Instantiate(Box, new Vector3(transform.localPosition.x, transform.localPosition.y - 1, 0), Quaternion.identity);
-            
+            Destroy(GameObject.FindWithTag("Box")); 
+            Instantiate(Box, new Vector3(transform.localPosition.x, transform.localPosition.y - 1, 0), Quaternion.identity);
+            SpawnedBox = 1;
             spawnBox = false;
-            return;
+           
         }
-        else
-        {
-            Destroy(SpawnedBox);
-            
-        }
+        
         
     }
 

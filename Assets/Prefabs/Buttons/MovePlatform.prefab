@@ -13,6 +13,14 @@ PrefabInstance:
       value: MovePlatform
       objectReference: {fileID: 0}
     - target: {fileID: 2472075664310116587, guid: 8c290387d24aa664496f2df8cc7e4882, type: 3}
+      propertyPath: m_Size.y
+      value: 0.71348035
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472075664310116587, guid: 8c290387d24aa664496f2df8cc7e4882, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.1995098
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472075664310116587, guid: 8c290387d24aa664496f2df8cc7e4882, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
       value: 0.5
       objectReference: {fileID: 0}
@@ -22,11 +30,11 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 2bfafa58bb7abce459f0335bfc8cde91, type: 3}
     - target: {fileID: 7024841670538789221, guid: 8c290387d24aa664496f2df8cc7e4882, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.391819
+      value: 38.811447
       objectReference: {fileID: 0}
     - target: {fileID: 7024841670538789221, guid: 8c290387d24aa664496f2df8cc7e4882, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.8375988
+      value: 24.175
       objectReference: {fileID: 0}
     - target: {fileID: 7024841670538789221, guid: 8c290387d24aa664496f2df8cc7e4882, type: 3}
       propertyPath: m_LocalPosition.z
@@ -66,6 +74,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8359553529252181736, guid: 8c290387d24aa664496f2df8cc7e4882, type: 3}
+    - {fileID: 7368897289776464245, guid: 8c290387d24aa664496f2df8cc7e4882, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
